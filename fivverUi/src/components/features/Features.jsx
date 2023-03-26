@@ -5,7 +5,7 @@ const Features = () => {
   return (
     <div className='features'>
         <div className="container">
-            <div className="item">
+            <div className="itemFeatures">
                 <h1>
                     A whole world of freelance talent at your fingertips.
                 </h1>

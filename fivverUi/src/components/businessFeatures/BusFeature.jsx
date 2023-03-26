@@ -5,7 +5,7 @@ const BusFeature = () => {
   return (
     <div className='Busfeatures'>
         <div className="container">
-            <div className="item">
+            <div className="itemBus">
                 <h1>fiverr <i>business</i></h1>
                 <h1>A business solution designed for <i>teams</i></h1>
                 <p>Upgrade to a curated experience packed with tools and benifits, dedicated to businesses</p>
