@@ -1,0 +1,114 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    background-color: #013914;
+    color: white;
+    flex-direction: column;
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+    transition: 0.5s all ease;
+    &.active{
+        background-color: white;
+        color: black;
+    }
+    .container{
+        max-width: 1300px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0px;
+        .logo{
+            font-size: 34px;
+            font-weight: bold;
+            .text{
+
+            }
+            
+            .dot{
+                color: #1dbf73;
+            }
+        }
+
+        .links{
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            font-weight: 500px;
+            font-family: 'Montserrat', sans-serif;
+            
+            .user{
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                cursor: pointer;
+                position: relative;
+                transition: all 0.3s ease;
+                img{
+                    border-radius: 50%;
+                    object-fit: cover;
+                    width: 32px;
+                    height: 32px;
+                }
+
+                .options{
+                    position: absolute;
+                    right: -20px;
+                    top:50px;
+                    padding: 20px;
+                    width: 100%;
+                    border: 1px solid lightgray ;
+                    background-color: white;
+                    color: black;
+                    display: flex;
+                    flex-direction: column;
+                    gap:15px;
+                    border-radius: 12px;
+                    color: gray;
+                    font-weight: 300;
+                    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+                }
+            }
+            .btn{
+                color: white;
+                padding: 10px 20px;
+                border-radius: 5px;
+                border: 1px solid white;
+                cursor: pointer;
+                background-color: transparent;
+                transition: all 0.2s linear;
+                &:hover{
+                    background-color: #1dbf73;
+                    border-color: #1dbf73;
+                }
+                &.active{
+                   border: 1px solid #1dbf73; 
+                   color: #1dbf73;
+                }
+                &.active:hover{
+                    background-color: #1dbf73;
+                    border-color: #1dbf73;
+                    color: white;
+                }
+                
+            }
+        }
+    }
+    hr{
+        width: 99%;
+        height: 0;
+        border: 0.5px solid lightgray;
+    }
+    .menu{
+        max-width: 1024px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0px;
+        font-weight: 300;
+        font-family: 'Montserrat', sans-serif;
+
+        color: gray;
+    }
+}

@@ -1,0 +1,49 @@
+*{
+
+    .link{
+        text-decoration: none;
+        color: inherit;
+    }
+    .swiper {
+        width: 100%;
+        height: 100%;
+      }
+      
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+      
+        /* Center slide text vertically */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(161, 160, 160);
+  border-radius: 5px;
+}
+
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(123, 122, 122);
+}
+
+

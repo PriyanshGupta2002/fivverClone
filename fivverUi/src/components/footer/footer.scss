@@ -1,0 +1,97 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    // padding: 100px 0px;
+    padding: 50px 0px;
+    .container{
+        width: 100%;
+        max-width: 1300px;
+        display: flex;
+        flex-direction: column;
+        gap: 1.3em;
+        .top{
+            display: flex;
+            justify-content: space-between;
+        .footlink{
+            display: flex;
+            flex-direction: column;
+            gap: 1.4rem;
+            .headTitle{
+                font-size: 18px;
+                color:#404145;
+                font-weight: 600;
+            }
+            p{
+                color: #62646a;
+                font-size: 16px;
+                font-weight: 400;
+                letter-spacing: 0.5px;
+            }
+        }
+        }
+        hr{
+            height: 0;
+        border: 0.5px solid #e4e5e7;
+        }
+        .bottom{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .left{
+                display: flex;
+                align-items: center;
+                gap: 25px;
+                h1{
+                    color: #b5b6ba;
+                }
+                p{
+                    color: #b5b6ba;
+                    font-size: 12px;
+                }
+            }
+            .right{
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+                padding: 4px;
+                .socials{
+                    display: flex;
+                    align-items: center;
+                    gap: 1.2rem;
+                    img{
+                        width: 15px;
+                        height: 15px;
+                        object-fit: contain;
+                       
+                    }
+                }
+                .lang,.currency{
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+                    cursor: pointer;
+                    padding: 6px;
+                    border-radius: 20px;
+                    img{
+                        width: 15px;
+                        height: 15px;
+                        object-fit: contain;
+                    }
+                    &:hover{
+                        background-color: #e4e5e7;
+                    }
+                }
+
+                .access{
+                    width: 15px;
+                    height: 15px;
+                    object-fit: contain;
+                }
+
+            }
+        }
+    }
+}

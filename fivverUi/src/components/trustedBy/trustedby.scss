@@ -1,0 +1,16 @@
+.trustedBy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fafafa;
+    gap: 1.6rem;
+    padding: 20px 0px;
+    color: #b5b6ba;
+    font-weight: 600;
+    font-size: 1.2rem;
+    .t-img{
+        width: 65px;
+        height:65px;
+        object-fit: contain;
+    }
+}

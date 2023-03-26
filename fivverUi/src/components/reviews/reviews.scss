@@ -1,0 +1,79 @@
+.reviews {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .top {
+
+        .noreview {
+            margin-top: 20px;
+            color: lightgray;
+        }
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+        .write{
+            padding: 10px 8px;
+            border: none;
+            font-size: 14px;
+            background-color: #1dbf73;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            width: max-content;
+        }
+        .comment{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            input {
+                width: 70%;
+                padding: 20px;
+                border: 1px solid gray;
+                outline: none;
+                font-size: 15px;
+                
+            }
+            
+            
+            button{
+                padding: 10px 8px;
+                border: none;
+                font-size: 14px;
+                background-color: #1dbf73;
+                color: white;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+        .rate{
+            display: flex;
+            align-items: center;
+            gap:10px;
+            padding: 30px;
+            select{
+                width: 200px;
+                padding: 20px;
+                align-self: flex-end;
+                border: 1px solid lightgray;
+                outline: none;
+                option{
+                    border: 1px solid lightgray;
+                    outline: none;
+                    padding: 20px;
+                }
+            }
+            img{
+                width: 20px;
+                height: 20px;
+                object-fit: cover;
+            }
+        }
+            
+    }
+}

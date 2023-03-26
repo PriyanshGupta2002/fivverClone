@@ -1,0 +1,22 @@
+
+
+    .orderTr{
+        height: 50px;
+        td{
+            img{
+                width: 50px;
+                height: 25px;
+                object-fit: cover;
+            }
+            .action{
+                width: 30px;
+                height: 30px;
+                object-fit: cover;
+                cursor: pointer;
+            }
+        }
+        &:nth-child(even){
+            background-color: #1dbf730f;
+        }
+        
+}

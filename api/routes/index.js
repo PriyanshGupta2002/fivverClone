@@ -1,0 +1,7 @@
+export {default as userRoute} from './userRoute.js'
+export {default as reviewRoute} from './reviewRoute.js'
+export {default as orderRoute} from './orderRoute.js'
+export {default as messageRoute} from './messageRoute.js'
+export {default as gigRoute} from './gigRoute.js'
+export {default as conversationRoute} from './conversationRoute.js'
+export {default as authRoute} from './authRoute.js'

@@ -1,0 +1,55 @@
+.mygigs{
+ 
+    display: flex;
+    justify-content: center;
+    .container{
+        width: 100%;
+           padding: 50px 0px ;
+        max-width: 1300px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .title{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .link{
+                button{
+                    font-size: 14px;
+                    background-color: #1dbf73;
+                    border: none;
+                    outline: none;
+                    padding: 5px 8px;
+                    cursor: pointer;
+                    color: white;
+                    font-size: 14px;
+                    font-weight: 500;
+
+                }
+            }
+        }
+        table{
+            width: 100%;
+            th{
+                text-align: left;
+            }
+            tr{
+                height: 50px;
+                td{
+                    img{
+                        width: 50px;
+                        height: 25px;
+                        object-fit: cover;
+                    }
+                    .action{
+                        width: 20px;
+                        cursor: pointer;
+                    }
+                }
+                &:nth-child(even){
+                    background-color: #1dbf730f;
+                }
+            }
+        }
+    }
+}

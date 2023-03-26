@@ -1,0 +1,80 @@
+.featured{
+  background-color: #013914;
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  color: white;
+    .container{
+        display: flex;
+        align-items: center;
+        max-width: 1300px;
+            justify-content: space-evenly;
+        width: 100%;
+        .left{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            h1{
+                font-size: 40px;
+                i{
+                    font-weight: 300;
+                }
+            }
+            .search{
+                display: flex;
+                align-items: center;
+                border-radius: 5px;
+                background-color: white;
+                justify-content: space-between;
+                width: 84%;
+                .searchInput{
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+                    width: 100%;
+                    img{
+                        width: 15px;
+                        height: 15px;
+                        object-fit: cover;
+                        margin-left:10px
+                    }
+                    input{
+                        padding: 10px 0px;
+                        width: 100%;
+                        background-color: transparent;
+                        border: none;
+                        outline: none;
+                    }
+                }
+                button{
+                    padding: 10px 10px;
+                    background-color: #1dbf73;;
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+            .popular{
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                button{
+                    border: 1px solid white;
+                    color: white;
+                    padding: 4px 8px;
+                    background-color: transparent;
+                    border-radius: 12px;
+                    outline: none;
+                    cursor: pointer;
+                }
+            }
+        }
+        .right{
+            height: 100%;
+            img{
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}

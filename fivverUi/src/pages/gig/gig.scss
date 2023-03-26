@@ -1,0 +1,241 @@
+.gig{
+    display: flex;
+    justify-content: center;
+    .container{
+        width: 100%;
+        max-width: 1300px;
+        padding: 30px 0px;
+        display: flex;
+        gap: 50px;
+        .left{
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .breadCrumbs{
+                font-weight: 500;
+                font-size: 13px;
+                color: #555;
+            }
+            .user{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                span{
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+                .pp{
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+                .stars{
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+                    img{
+                        width: 15px;
+                        height: 15px;
+                        object-fit: cover;
+                    }
+                    span{
+                        color: #ffc107;
+                        font-size: 14px;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .slider{
+                img{
+                    max-height: 500px;
+                    object-fit: contain;
+                    width: 300px;
+                }
+            }
+            h2{
+                font-weight: 400;
+            }
+            p{
+                font-weight: 300;
+                color: #555;
+                line-height: 25px;
+            }
+            .seller{
+                margin-top: 50px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                .userinfo{
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    img{
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+                    .info{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        .stars{
+                            display: flex;
+                            align-items: center;
+                            gap: 4px;
+                            img{
+                                width: 15px;
+                                height: 15px;
+                                object-fit: cover;
+                            }
+                            span{
+                                color: #ffc107;
+                                font-size: 14px;
+                                font-weight: bold;
+                            }
+                        }
+                        button{
+                            border: 1px solid gray;
+                            outline: none;
+                            background-color: white;
+                            cursor: pointer;
+                            padding: 8px 4px;
+                            border-radius: 8px;
+                        }
+                    }
+                }
+                .box{
+                    border: 1px solid lightgray;
+                    border-radius: 5px;
+                    padding: 20px;
+                    margin-top: 20px;
+                    .items{
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        .item{
+                            width: 300px;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 10px;
+                            margin-bottom: 20px;
+                            .title{
+                                font-weight: 300;
+
+                            }
+                        }
+                    }
+                    hr{
+                        height: 0;
+                        border: 0.5px solid lightgray;
+                        margin-bottom: 20px;
+                    }
+
+                }
+            }
+        }
+        .right{
+            flex: 1;
+            padding: 10px 0px;
+            .box{
+                display: flex;
+                position: sticky;
+                top:20%;
+                padding: 20px;
+                flex-direction: column;
+                gap: 1.1rem;
+                border-radius: 7px;
+                border: 1px solid lightgray;
+                .boxTitle{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    span{
+                        font-weight: bold;
+                        font-size: 14px;
+                    }
+                    .price{
+                        font-weight: 400;
+                        font-size: 14px;
+                    }
+                }
+                .desc{
+                    p{
+                        font-size: 14px;
+                        color: gray;
+                        font-weight: 600;
+                    }
+                }
+
+                .services{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .time{
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                        img{
+                            width: 15px;
+                            height: 15px;
+                            object-fit: cover;
+                        }
+                        span{
+                            font-weight: 500;
+                            font-size: 14px;
+                        }
+                    }
+                    .rev{
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                        img{
+                            width: 15px;
+                            height: 15px;
+                            object-fit: cover;
+                        }
+                        span{
+                            font-size: 14px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+
+                .gigFeatures{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 7px;
+                    .feature{
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                        img{
+                            width: 15px;
+                            height: 15px;
+                            object-fit: cover;
+                        }
+                        span{
+                            font-size: 14px;
+                            font-weight: 300;
+                        }
+                    }
+                }
+                
+
+                    button{
+                        padding: 10px 0px;
+                    border: none;
+                    font-size: 14px;
+                    background-color: #1dbf73;
+                    color: white;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+            
+                
+            }
+        }
+    }
+}

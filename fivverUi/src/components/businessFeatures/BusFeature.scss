@@ -1,0 +1,67 @@
+.Busfeatures{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d084d;
+    padding: 100px 0px;
+    
+    .container{
+        width: 100%;
+        max-width: 1300px;
+        display: flex;
+        align-items: center;
+        gap: 100px;
+        .item{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap:1.5rem;
+            h1{
+                color: white;
+                i{
+                    font-weight: 200;
+                }
+             }
+             p{
+                color: white;
+             }
+             .titles{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                .title{
+                    display: flex;
+                    align-items: center;
+                    gap: 6px;
+                    p{
+                        color: white;
+                        font-size: 13px;
+                        letter-spacing: 0.5px;
+                    }
+                    img{
+                        width: 22px;
+                        height: 22px;
+                        object-fit: contain;
+                    }
+                }
+             }
+             .btn{
+                width: max-content;
+                background-color:  #1dbf73;
+                color: white;
+                padding: 12px;
+                border-radius: 6px;
+                cursor: pointer;
+                border: none;
+                outline: none;
+                font-weight: 500;
+             }
+        }
+        .item-r{
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

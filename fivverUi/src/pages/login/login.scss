@@ -1,0 +1,45 @@
+.login{
+    display: flex;
+    justify-content: center;
+    .container{
+        width: 1400px;
+        padding: 40px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        h1{
+            color: rgb(152, 152, 152);
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 30%;
+            padding: 50px 0px;
+            .formItem{
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+                label{
+                    color: gray;
+                    font-size: 18px;
+                }
+                input{
+                    border: 1px solid lightgray;
+                    padding: 15px;
+                    outline: none;
+                }
+               
+            }
+            button{
+                border: none;
+                padding: 14px 0px;
+                color: white;
+                font-size: 18px;
+                background-color: #1dbf73;
+                cursor: pointer;
+            }
+        }
+    }
+}
