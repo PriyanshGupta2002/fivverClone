@@ -8,7 +8,7 @@ import {
 } from 'react-router-dom'
 import './app.scss'
 import Footer from './components/footer/Footer'
-import {Home,Add,Gig,Gigs,Message,Messages,MyGigs,Orders, Login, Register,Pay} from '../src/pages/index'
+import {Home,Add,Gig,Gigs,Message,Messages,MyGigs,Orders, Login, Register,Pay, Success} from '../src/pages/index'
 
 
 const App = () => {
@@ -69,8 +69,12 @@ const App = () => {
           element:<Register/>
         },
         {
-          path:"/pay",
+          path:"/pay/:id",
           element:<Pay/>
+        },
+        {
+          path:"/success",
+          element:<Success/>
         }
       ]
     }

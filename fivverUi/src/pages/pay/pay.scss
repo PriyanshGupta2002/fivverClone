@@ -1,0 +1,20 @@
+ .checkoutForm{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 40px;
+    margin: 50px auto;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 30px;
+    button{
+        padding: 10px 0px;
+        border: none;
+        font-size: 14px;
+        background-color: #1dbf73;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+ }

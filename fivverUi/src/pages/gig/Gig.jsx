@@ -1,7 +1,7 @@
 import React from "react";
 import "./gig.scss";
 import Slider from "infinite-react-carousel";
-import { Link, useParams } from "react-router-dom";
+import {useNavigate, useParams } from "react-router-dom";
 import { gigBox } from "../../constants/constants";
 
 import { useQuery } from "@tanstack/react-query";
@@ -11,7 +11,7 @@ const Gig = () => {
 
 
   const { id } = useParams();
-
+  const navigate = useNavigate()
 
     const { isLoading, error, data } = useQuery({
       queryKey: [id],
@@ -120,7 +120,7 @@ const Gig = () => {
                     </div>
 
                    
-                  {currentUser._id !== userId &&  <button>
+                  {currentUser._id !== userId &&  <button onClick={()=>navigate(`/pay/${id}`)} >
                       Continue
                     </button>}
                  
