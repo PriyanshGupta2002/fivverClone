@@ -24,3 +24,6 @@
 
 # Chat Page
 ![screencapture-localhost-5173-message-64185c3f2d01962266692196641735e2fdaf8bd4b4e808d9-2023-03-26-14_44_00](https://user-images.githubusercontent.com/86533169/227766249-788dbd3d-d343-40f2-ab34-dde1df8e8d17.png)
+
+# Payment Page
+![screencapture-localhost-5173-pay-64197686680052eb3d69c436-2023-03-27-00_53_12](https://user-images.githubusercontent.com/86533169/227799488-80ea0e91-59be-4b9b-80c7-f60aad86c9cb.png)
