@@ -1,7 +1,15 @@
 import React from 'react'
 import './featured.scss'
 import { popular } from '../../constants/constants'
+import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 const Featured = () => {
+    const [search, setsearch] = useState("")
+    const navigate = useNavigate();
+    const handleSearch = (e)=>{
+        e.preventDefault()
+        navigate(`/gigs?search=${search.trim().toLowerCase()}`)
+    }
   return (
     <div className='featured'>
         <div className="container">
@@ -10,9 +18,9 @@ const Featured = () => {
                 <div className="search">
                     <div className="searchInput">
                         <img src="./img/search.png" alt="" />
-                        <input type="text" placeholder='Try building mobile app' />
+                        <input type="text" placeholder='Try building mobile app' value={search} onChange={(e)=>setsearch(e.target.value)} />
                     </div>
-                    <button>Search</button>
+                    <button onClick={handleSearch}>Search</button>
                 </div>
                 <div className="popular">
                     <span>

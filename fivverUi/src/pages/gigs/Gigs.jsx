@@ -8,6 +8,8 @@ const Gigs = () => {
 
   
   const {search} = useLocation()
+  
+  const searchQuery = decodeURIComponent(search).replace(/\s/g, '')
   const [showMenu, setshowMenu] = useState(false)
   const [op, setop] = useState("sales")
   
@@ -16,7 +18,7 @@ const Gigs = () => {
 
   const { isLoading, error, data,refetch } = useQuery({
     queryKey: ['gigs'],
-    queryFn: () => newRequest.get(`/gigs${search}&min=${minRef.current.value}&max=${maxRef.current.value}&sort=${op}`).then((res)=>{
+    queryFn: () => newRequest.get(`/gigs${searchQuery}&min=${minRef.current.value}&max=${maxRef.current.value}&sort=${op}`).then((res)=>{
       return res.data
     })
   })
@@ -34,6 +36,7 @@ const Gigs = () => {
   const apply=()=>{
     refetch()
   }
+
   return (
     <div className='gigs' >
       <div className="container">

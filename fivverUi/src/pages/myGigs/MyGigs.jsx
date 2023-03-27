@@ -1,11 +1,33 @@
 import React from 'react'
 import './mygigs.scss'
 import { Link } from 'react-router-dom'
-import { mygigs } from '../../constants/constants'
+import { getCurrentUser } from '../../utils/getCurrentUser'
+import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
+import newRequest from '../../utils/newRequest'
 const MyGigs = () => {
+  const currentUser = getCurrentUser()
+  const queryClient = useQueryClient()
+  const { isLoading, error, data:mygigs } = useQuery({
+    queryKey: ['gigs'],
+    queryFn: () => newRequest.get(`/gigs?userId=${currentUser._id}`).then((res)=>{
+      return res.data
+    })
+  })
+
+  const mutation = useMutation({
+    mutationFn: (gigId) => {
+      return newRequest.delete(`gigs/deleteGig/${gigId}`)
+    },
+    onSuccess:()=>{queryClient.invalidateQueries(['gigs'])}
+  })
+
+  const handleDelete=(gigId)=>{
+    mutation.mutate(gigId)
+  }
+
   return (
     <div className='mygigs'>
-      <div className="container">
+    {isLoading?"Loading...":error?"Something went wrong":<div className="container">
 
 
         <div className="title">
@@ -22,20 +44,19 @@ const MyGigs = () => {
             <th>Image</th>
             <th>Title</th>
             <th>Price</th>
-            <th>Orders</th>
             <th>Action</th>
           </tr>
         
             {mygigs.map((mgig,idx)=>(
               <tr key={idx}>
               <td>
-                <img src={mgig.img} alt="" />
+                <img src={mgig.cover} alt="" />
               </td>
               <td>{mgig.title}</td>
               <td>{mgig.price}</td>
-              <td>{mgig.orders}</td>
+              {/* <td>{mgig.orders}</td> */}
               <td>
-                <img className='action' src="/img/delete.png" alt=""/>
+                <img className='action' src="/img/delete.png" alt="" role='button' onClick={()=>handleDelete(mgig._id)}/>
               </td>
               </tr>
             ))}
@@ -43,7 +64,7 @@ const MyGigs = () => {
         
         </table>
 
-      </div>
+      </div>}
     </div>
   )
 }
