@@ -9,10 +9,10 @@ const Gigs = () => {
   
   const {search} = useLocation()
   
-  const searchQuery = decodeURIComponent(search).replace(/\s/g, '')
+  const searchQuery = decodeURIComponent(search)
   const [showMenu, setshowMenu] = useState(false)
   const [op, setop] = useState("sales")
-  
+  console.log(searchQuery)
   const minRef = useRef(null)
   const maxRef = useRef(null)
 
@@ -22,6 +22,7 @@ const Gigs = () => {
       return res.data
     })
   })
+
 
 
 
